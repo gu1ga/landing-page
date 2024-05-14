@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+}
+
+.page{
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    gap: 25px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.top-section .left-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 360px;
+    height: 203px;
+}
+
+.top-section .left-card .sign-up{
+   align-self: flex-start;
+   padding: 2px 25px 2px 25px;
+}
+
+.top-section img{
+    width: 360px;
+    height: 203px;
+}
