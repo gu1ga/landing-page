@@ -38,7 +38,7 @@ body, html{
 }
 
 
-/* SECTIONs */
+/* SECTIONS GENERAL STYLE */
 
 .first-section,
 .second-section,
@@ -55,13 +55,12 @@ body, html{
     background-color: #1F2937;
 }
 
-/* FIRST SECTION */
-
-.first-section{
-    flex-direction: column;
-    gap: 25px;
-    padding-top: 15px;
+.third-section{
+    background-color: #E5E7EB;
 }
+
+
+/* FIRST SECTION */
 
 .first-section .header,
 .first-section .header ul,
@@ -71,17 +70,176 @@ body, html{
     justify-content: space-between;
 }
 
-.first-section .header, .main-section{
-    max-width: 1100px;
-    width: 100%;
+
+.first-section{
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 15px;
+
+    .header, 
+    .main-section{
+        max-width: 1100px;
+        width: 100%;
+    }
+    .header{
+        h2, 
+        ul li a{
+            color: #E5E7EB;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        h2{
+            font-size: 24px;
+        }
+    }
+    .main-section{
+        .left-card{
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            gap: 20px;
+
+            h1{
+                color: #F9FAF8;
+                font-size: 48px;
+                font-weight: bolder;
+            }
+            p{
+                color: #E5E7EB;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .sign-up{
+                align-self: flex-start;
+            }
+        }
+    }
 }
 
-.first-section > .main-section > .left-card {
-    max-width: 300px;
+
+
+/* SECOND SECTION */
+
+.second-section .card-container,
+.second-section .content-container{
+    display: flex;
+    gap: 25px;
+}
+
+.second-section{
+    .content-container{
+        width: 100%;
+        max-width: 1100px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+        h2{
+            color: #1F2937;
+            font-size: 36px;
+            font-weight: bolder;
+        }
+
+        .card-container{
+            width: 100%;
+            justify-content: center;
+            gap: 100px;
+
+            .card{
+                max-width: 150px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+
+                img{
+                    width: 150px;
+                    height: 150px;
+                    border: #3882f6 solid 4px;
+                    border-radius: 25px;
+                }
+
+                p{
+                    text-align: center;
+                    color: #1F2937;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    
+} 
+
+/* THIRD SECTION */
+
+.third-section{
+    .citation-container{
+        max-width: 650px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .citation{
+        color: #1F2937;
+        font-size: 28px;
+        font-style: italic;
+        font-weight: lighter;
+    }
+
+    .citation-author{
+        font-size: 18px;
+        font-weight: bold;
+        align-self: flex-end;
+    }
+}
+
+/* FOURTH SECTION */
+
+.fourth-section{
+    .call-to-action-container{
+        max-width: 1100px;
+        width: 100%;
+        padding-left: 150px;
+        padding-right: 150px;
+
+        .sign-up-container{
+            background-color: #3882f6;
+            padding: 25px;
+            padding-left: 80px;
+            padding-right: 80px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .text-container{
+                .title{
+                    color: #F9FAF8;
+                    font-weight: bolder;
+                    font-size: 18px;
+                }
+
+                .description{
+                    color: #E5E7EB
+                }            
+            }
+
+            .sign-up{
+                border: #F9FAF8 solid 2px;
+            }
+        }
+    }
 }
 
 /* FOOTER */
 
 .footer{
     padding: 25px;
+
+    p{
+        color: #F9FAF8;
+        font-size: 18px;
+        font-weight: bolder;
+    }
 }
