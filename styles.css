@@ -113,6 +113,23 @@ body, html{
                 align-self: flex-start;
             }
         }
+
+        .image{
+
+            max-width: 500px;
+            width: 400px;
+            height: 200px;
+            background-color: #E5E7EB;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            img{
+                color: #1F2937;
+            }
+        
+        }
     }
 }
 
@@ -227,6 +244,7 @@ body, html{
 
             .sign-up{
                 border: #F9FAF8 solid 2px;
+                flex-shrink: 0;
             }
         }
     }
